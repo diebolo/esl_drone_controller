@@ -1,0 +1,16 @@
+[package]
+name = "lib"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0.*", default-features = false }
+postcard = { version = "1.0.8", features = ["alloc"] }
+fixed = { version = "1.26", features = ["serde"] }
+labrador-ldpc = "1.0.1"
+crc-any = "2.4.4"
+[lib]
+name = "share_lib"
+crate-type = ["lib"]

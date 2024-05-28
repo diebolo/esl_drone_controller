@@ -1,0 +1,14 @@
+[package]
+name = "runner"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tudelft-serial-upload = "2"
+lib = {path = "../lib", version = "0.1.0"}
+termion = "1.5.2"
+clearscreen = "2.0.1"
+gilrs = '0.10.4'
+fixed = { version = "1.26", features = ["serde"] }
